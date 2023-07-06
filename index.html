@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop at Egrociers for a convenient and hassle-free online grocery shopping experience"
+    />
+    <meta
+      name="keywords"
+      content="egrociers, online grocery, grocery store, revou, fcse mini project"
+    />
+    <title>E-Grociers Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+      integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./assets/logoipsum-225.svg" alt="E-Grociers logo" style="width: 50px;"/>
+          </div>
+          <button
+            class="menu-button"
+            id="menu-button"
+            onclick="toggleMenuButton()"
+          >
+            <i data-feather="menu"></i>
+          </button>
+          <ul class="navigation-list" id="menu-list">
+            <li><a href="#hero" onclick="setTitle(this)">Home</a></li>
+            <li>
+              <a href="#our-package" onclick="setTitle(this)">Our Package</a>
+            </li>
+            <li><a href="#call-us" onclick="setTitle(this)">Call Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="hero" id="hero">
+        <div class="hero-slider" id="hero-slider">
+          <img id="slide1" src="./assets/images/banner2.jfif" alt="" />
+          <img id="slide2" src="./assets/images/banner3.jfif" alt="" />
+          <img id="slide3" src="./assets/images/banner4.png" alt="" />
+          <img id="slide4" src="./assets/images/banner5.jfif" alt="" />
+          <img id="slide5" src="./assets/images/banner15.jpg" alt="" />
+          <img id="slide6" src="./assets/images/banner2.jfif" alt="" />
+          <img id="slide7" src="./assets/images/banner3.jfif" alt="" />
+          <img id="slide8" src="./assets/images/banner4.png" alt="" />
+        </div>
+        <div class="hero-wrapper">
+          <h1 class="main-title">Belanja di E-Grosir Terbaik di Dunia</h1>
+          <p class="hero-description">Setiap Hari Dengan Bahan Terbaru</p>
+          <button class="button" onclick="getStartButton()">
+            Mulai!
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about-contact" id="about">
+          <div class="about">
+            <img
+              src="./assets/images/banner1.jfif"
+              alt="A beach in Bali during dusk, with some peoples playing"
+              class="about-img"
+            />
+            <p class="about-caption">
+              Beli sayuran disini dijamin fresh dan sehat
+            </p>
+            <div class="about-author">
+              <img src="./assets/images/Megawati Soekarnoputri & Puan Maharani.jfif" alt="" class="author-img" />
+              <div class="author-data">
+                <div class="author-name">Puan Maharani</div>
+                <div class="author-info">Ibu Rumah Tangga, 39</div>
+              </div>
+            </div>
+            <hr class="border" />
+            <div class="feature">
+              <h2 class="subsection-title">
+                Beberapa keuntungan yang Anda akan dapatkan dengan menggunakan
+                jasa kami:
+              </h2>
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i data-feather="globe"></i>
+                  </div>
+                  <div class="feature-description">
+                    Tersedia perjalanan ke banyak tempat destinasi terbaik di
+                    dunia
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i data-feather="globe"></i>
+                  </div>
+                  <div class="feature-description">
+                    Pemesanan dan pembayaran yang mudah, cepat, dan dapat
+                    dilakukan kapan saja dan dimana saja
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i data-feather="globe"></i>
+                  </div>
+                  <div class="feature-description">
+                    Ada tawaran-tawaran menarik yang menanti untuk perjalanan
+                    Anda selanjutnya
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i data-feather="globe"></i>
+                  </div>
+                  <div class="feature-description">
+                    Uang kembali hingga 90% jika Anda batal melakukan perjalanan
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <h2 class="subsection-title">Contact Us</h2>
+            <p>
+              Sales akan menghubungi Anda 1x24 jam setelah data anda kami terima
+            </p>
+            <form
+              class="contact-form"
+              name="contact-form"
+              onsubmit="return validateForm()"
+            >
+              <div class="form-field">
+                <label for="name" class="input-label">Nama:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="input-field"
+                  placeholder="Nama depan dan nama belakang"
+                  oninput="fillInput('name')"
+                />
+                <p class="error-msg" id="name-error">Masukan Nama</p>
+              </div>
+              <div class="form-field">
+                <label for="email" class="input-label">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="input-field"
+                  placeholder="masukan@email.com"
+                  oninput="fillInput('email')"
+                />
+                <p class="error-msg" id="email-error">
+                  Please fill your email with a correct format
+                </p>
+              </div>
+              <div class="form-field">
+                <label for="interest" class="input-label"
+                  >Mau belanja apa?</label
+                >
+                <select
+                  id="interest"
+                  name="interest"
+                  class="input-field"
+                  oninput="selectInterest()"
+                >
+                  <option value="none" selected disabled>Masukan opsi</option>
+                  <option value="option 1">
+                    Opsi 1
+                  </option>
+                  <option value="option 2">Opsi 2</option>
+                  <option value="option 3">
+                    Opsi 3
+                  </option>
+                </select>
+                <p class="error-msg" id="interest-error">
+                  Please select one interest
+                </p>
+              </div>
+              <button type="submit" class="button">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="package" id="our-package">
+        <div class="package-banner">
+          <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="package-list">
+            <div class="package-item">
+              <div class="package-icon">
+                <i data-feather="thumbs-up"></i>
+              </div>
+              <div class="package-content">
+                <h3>Sayuran yang Segar</h3>
+                <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+              </div>
+            </div>
+            <div class="package-item">
+              <div class="package-icon">
+                <i data-feather="thumbs-up"></i>
+              </div>
+              <div class="package-content">
+                <h3>Buah-buahan yang segar</h3>
+                <p>
+                  Buah dengan kualitas terbaik dari local atau import dan harga
+                  yang menarik
+                </p>
+              </div>
+            </div>
+            <div class="package-item">
+              <div class="package-icon">
+                <i data-feather="thumbs-up"></i>
+              </div>
+              <div class="package-content">
+                <h3>Pengiriman yang cepat</h3>
+                <p>
+                  Di kirim instan oleh kurir yang telah di training dengan SOP
+                  untuk menjaga kondisi belanja kamu
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="border" />
+          <div class="package-list">
+            <div class="package-item">
+              <div class="package-icon">
+                <i data-feather="star"></i>
+              </div>
+              <div class="package-content">
+                <h3>Bahan dapur</h3>
+                <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+              </div>
+            </div>
+            <div class="package-item">
+              <div class="package-icon">
+                <i data-feather="star"></i>
+              </div>
+              <div class="package-content">
+                <h3>Alat memasak</h3>
+                <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+              </div>
+            </div>
+            <div class="package-item">
+              <div class="package-icon">
+                <i data-feather="star"></i>
+              </div>
+              <div class="package-content">
+                <h3>Bantuan ide memasak</h3>
+                <p>
+                  Bingung masak apa? sudah tersedia paket untuk kamu masak di
+                  dapur mu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta" id="call-us">
+        <div class="container">
+          <h2 class="section-title">Hubungi Kami</h2>
+          <p>
+            Ingin memesan perjalanan? Ada kendala yang perlu dibantu? Silakan
+            hubungi kami dengan menekan tombol di bawah ini
+          </p>
+          <button class="button">Hubungi</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/logoipsum-225.svg" alt="E-Grociers logo" width="165" />
+        </div>
+        <ul class="footer-navigation">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div>
+          © 2023 <a href="https://www.instagram.com/diskyphiter/">Disky Phiter</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slideShow.js"></script>
+  </body>
+</html>
